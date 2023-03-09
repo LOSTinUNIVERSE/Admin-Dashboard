@@ -136,14 +136,17 @@ main{
     grid-area: 1/1/-1/2;
     background-color: lightgreen;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    margin: 5% 2% 5% 2%
 }
 .project{
-    grid-area: 1/1/2/2;
     background-color: green;
+    
 }
 .announcements{
     grid-area: 1/2/-1/-1;
 background-color: lightcyan;
+margin-right: 5%;
 }
