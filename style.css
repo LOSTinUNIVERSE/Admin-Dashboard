@@ -1,6 +1,11 @@
+@font-face {
+    font-family: roboto;
+    src: url(/roboto/Roboto-Italic.ttf);
+}
 *{
     margin: 0px;
     padding: 0px;
+    font-family: roboto;
 }
 #container{
     background-color: lightgreen;
@@ -152,8 +157,8 @@ button{
     border: white 1px solid;
 }
 input{
-    height: 50%;
-    border-radius: 10px;
+    height: 1.5rem;
+    border-radius: 2rem;
 }
 main{
     background-color: #0f172a;
