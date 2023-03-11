@@ -78,8 +78,9 @@
 }
 
 header{
-    background-color: lightpink;
-    grid-area: h;
+    background-color: rgb(112, 48, 138);
+    /* grid-area: h; */
+    /* border-radius: 10px; */
     display: grid;
     gap: 10px;
     /* flex-direction: row; */
@@ -88,10 +89,13 @@ header{
 .sBar{
     display: flex;
     justify-content: space-between;
-    gap: 20px;    
+    gap: 20px; 
+    align-items: center;
+    /* justify-content: center; */
 }
 .search{
 display: flex;
+    align-items: center;
     gap: 10px;
     display: flex;
     flex: 0.8;
@@ -113,17 +117,23 @@ margin: 5px;
     grid-template-rows: 1fr 1fr;
     grid-auto-flow: column;
     align-items: center;
-    justify-items: start;
+    /* justify-items: start; */
     justify-content: start;
 }
 .greetings>img{
     grid-area: 1/1/3/2;
+    display: grid;
+    justify-self: center;
 }
 .greetings>p{
     grid-area: 1/2/2/-1;
+    display: grid;
+    align-self: end;
 }
-h3{
+.greetings>h3{
     grid-area: 2/2/3/-1;
+    display: grid;
+    align-self: start;
 }
 .actions{
     display: grid;
@@ -155,7 +165,7 @@ main{
 }
 .yourProjects{
     grid-area: 1/1/-1/2;
-    background-color: grey;
+    /* background-color: grey; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     grid-template-rows: auto;
@@ -167,6 +177,8 @@ main{
     background-color: #5c3188;
     border: 1px grey;
     display: grid;
+    border-radius: 10px;
+
     /* justify-content: center; */
     /* align-items: center; */
 }
@@ -240,6 +252,9 @@ grid-template-rows: repeat(3, min-content);
     align-items: center;
     justify-items: center;
 }
+.trending>p:first-child{
+    font-weight: 700;
+}
 /* .trending>div:first-child{
     display: grid;
     grid-area: 1/1/2/-1;
@@ -265,10 +280,15 @@ main >p:nth-of-type(2) {
 }
 p,h3{
     margin: 15px;
-    color: white;
+    color: rgb(253, 250, 250);
 }
 
 img{
     width: 2rem;
     height: 2rem;
+}
+.news+h3{
+    display: grid;
+    justify-self: center;
+    align-content: end;
 }
