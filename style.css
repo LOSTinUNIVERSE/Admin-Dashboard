@@ -1,11 +1,7 @@
-@font-face {
-    font-family: roboto;
-    src: url(/roboto/Roboto-Italic.ttf);
-}
 *{
     margin: 0px;
     padding: 0px;
-    font-family: roboto;
+    font-family: 'Times New Roman', Times, serif;
 }
 #container{
     background-color: lightgreen;
